@@ -28,6 +28,7 @@ Of course, you no longer work with Ruby AR objects in this block.
 
 == Install
 #in your Gemfile
+
 gem 'without_instanciation' 
 
 
