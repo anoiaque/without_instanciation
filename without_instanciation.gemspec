@@ -20,10 +20,8 @@ Gem::Specification.new do |s|
     EOF
   
   s.rubyforge_project = "without_instanciation"
-  # s.add_development_dependency('rake')
-  # s.add_development_dependency('mocha')
-  # s.add_development_dependency('activerecord', '>= 3.0.1')
-  # s.add_development_dependency('sqlite3')
+  s.add_development_dependency('enginex')
+  s.add_development_dependency('sqlite3')
   s.files = Dir['lib/**/*.rb']
   s.require_path = "lib"
   s.test_files  = Dir['test/**/*.rb']
