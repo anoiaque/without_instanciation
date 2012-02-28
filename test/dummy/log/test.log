@@ -20244,3 +20244,46 @@ Migrating to CreateUsers (20120228153737)
   [1m[35mAREL (0.1ms)[0m  INSERT INTO "users" ("updated_at", "name", "created_at") VALUES ('2012-02-28 16:10:04.895049', 'Number 10', '2012-02-28 16:10:04.895049')
   [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE "users"."name" = 'Number 10'[0m
   [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = 'Number 10' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20120228153737)
+  [1m[35mAREL (1.2ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.186654', '2012-02-28 19:01:29.186654', 'Number 1')
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.232415', '2012-02-28 19:01:29.232415', 'Number 2')[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.233824', '2012-02-28 19:01:29.233824', 'Number 3')
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.235149', '2012-02-28 19:01:29.235149', 'Number 4')[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.236308', '2012-02-28 19:01:29.236308', 'Number 5')
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.237268', '2012-02-28 19:01:29.237268', 'Number 6')[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.238324', '2012-02-28 19:01:29.238324', 'Number 7')
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.239201', '2012-02-28 19:01:29.239201', 'Number 8')[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.239885', '2012-02-28 19:01:29.239885', 'Number 9')
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.240558', '2012-02-28 19:01:29.240558', 'Number 10')[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.242894', '2012-02-28 19:01:29.242894', 'Number 1')[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.244035', '2012-02-28 19:01:29.244035', 'Number 2')
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.244773', '2012-02-28 19:01:29.244773', 'Number 3')[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.245460', '2012-02-28 19:01:29.245460', 'Number 4')
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.246189', '2012-02-28 19:01:29.246189', 'Number 5')[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.246921', '2012-02-28 19:01:29.246921', 'Number 6')
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.247726', '2012-02-28 19:01:29.247726', 'Number 7')[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.248437', '2012-02-28 19:01:29.248437', 'Number 8')
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.249180', '2012-02-28 19:01:29.249180', 'Number 9')[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.249877', '2012-02-28 19:01:29.249877', 'Number 10')
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.252090', '2012-02-28 19:01:29.252090', 'Number 1')
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.253290', '2012-02-28 19:01:29.253290', 'Number 2')[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.254094', '2012-02-28 19:01:29.254094', 'Number 3')
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.254811', '2012-02-28 19:01:29.254811', 'Number 4')[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.255494', '2012-02-28 19:01:29.255494', 'Number 5')
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.256173', '2012-02-28 19:01:29.256173', 'Number 6')[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.256858', '2012-02-28 19:01:29.256858', 'Number 7')
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.257534', '2012-02-28 19:01:29.257534', 'Number 8')[0m
+  [1m[35mAREL (0.0ms)[0m  INSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.258276', '2012-02-28 19:01:29.258276', 'Number 9')
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO "users" ("updated_at", "created_at", "name") VALUES ('2012-02-28 19:01:29.258975', '2012-02-28 19:01:29.258975', 'Number 10')[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE "users"."name" = 'Number 10'
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."name" = 'Number 10' LIMIT 1[0m

@@ -12,7 +12,7 @@ class WithoutInstanciationTest < ActiveSupport::TestCase
     assert_equal 10, users.count
   end
   
-  test "it should get each as Hash" do
+  test "it should get each as Hash, not User object" do
     users = User.without_instanciation { User.all }
     user = users.first
     
