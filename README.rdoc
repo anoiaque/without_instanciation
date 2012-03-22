@@ -26,6 +26,11 @@ Of course, you no longer work with Ruby AR objects in this block.
           end
   users.first['name']  #=> "Matt"       
 
+== Beware
+  
+  It doesn't hanle multi-threading access, ie, two threads may call without_instanciation on the same class and
+  as AR#find_by_sql is redefined during the block execution, one thread may redefine or undefine #find_by_sql ...
+
 == Install
 #in your Gemfile
 
